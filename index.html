@@ -543,7 +543,7 @@
 
   /* ── HERO LAYOUT FOR GLOBE */
   .hero{display:grid;grid-template-columns:1fr 1fr;min-height:92vh;padding:100px 0 60px;}
-  .hero-visual{position:relative;z-index:2;display:flex;align-items:flex-start;justify-content:center;padding-top:0px;margin-top:-120px;opacity:0;animation:fadeIn 1.4s ease .9s forwards;}
+  .hero-visual{position:relative;z-index:2;display:flex;align-items:flex-start;justify-content:center;padding-top:0px;margin-top:-340px;opacity:0;animation:fadeIn 1.4s ease .9s forwards;}
   @keyframes fadeIn{to{opacity:1;}}
 
   /* ── HERO ENTRY ANIMATIONS */
@@ -881,7 +881,7 @@
         <div class="story-stat-block" style="margin-top:36px;">
           <div class="story-stat"><div class="story-stat-num" data-target="20">0<span>+</span></div><div class="story-stat-label">Years leadership experience</div></div>
           <div class="story-stat"><div class="story-stat-num" data-target="5">0</div><div class="story-stat-label">Core service pillars</div></div>
-          <div class="story-stat"><div class="story-stat-num" data-target="6">0</div><div class="story-stat-label">Target markets</div></div>
+          <div class="story-stat"><div class="story-stat-num" data-target="7">0</div><div class="story-stat-label">Target markets</div></div>
           <div class="story-stat"><div class="story-stat-num">&#8734;</div><div class="story-stat-label">Student pathways created</div></div>
         </div>
       </div>
@@ -1097,6 +1097,10 @@
             <div style="width:34px;height:34px;border-radius:50%;border:2px solid var(--gold);display:flex;align-items:center;justify-content:center;flex-shrink:0;"><div style="width:12px;height:12px;border-radius:50%;background:var(--gold);"></div></div>
             <div><div style="font-size:15px;font-weight:600;color:var(--white);margin-bottom:2px;">Thailand</div><div style="font-size:12.5px;font-weight:300;color:rgba(255,255,255,0.5);">Active Study Tour destination and TNE market</div></div>
           </div>
+          <div style="display:flex;gap:16px;align-items:flex-start;">
+            <div style="width:34px;height:34px;border-radius:50%;border:2px solid var(--teal-light);display:flex;align-items:center;justify-content:center;flex-shrink:0;"><div style="width:12px;height:12px;border-radius:50%;background:var(--teal-light);"></div></div>
+            <div><div style="font-size:15px;font-weight:600;color:var(--white);margin-bottom:2px;">Nepal</div><div style="font-size:12.5px;font-weight:300;color:rgba(255,255,255,0.5);">New and growing market for Australian education</div></div>
+          </div>
         </div>
       </div>
 
@@ -1115,6 +1119,7 @@
             <path d="M 405,415 Q 330,340 285,250"/>
             <path d="M 405,415 Q 320,360 250,260"/>
             <path d="M 405,415 Q 420,330 460,225"/>
+            <path d="M 405,415 Q 320,310 262,168"/>
           </g>
 
           <!-- India landmass -->
@@ -1136,6 +1141,9 @@
           <!-- India (gold, large) -->
           <circle cx="225" cy="190" r="11" fill="#c9a84c"/><circle cx="225" cy="190" r="18" fill="none" stroke="#c9a84c" stroke-width="1" opacity="0.4"><animate attributeName="r" values="16;26;16" dur="2.6s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.4;0;0.4" dur="2.6s" repeatCount="indefinite"/></circle>
           <text x="205" y="178" text-anchor="end" font-family="DM Sans,sans-serif" font-size="13" font-weight="500" fill="#e8c97a">India</text>
+          <!-- Nepal (teal) -->
+          <circle cx="262" cy="168" r="7" fill="#2dc4ba"/><circle cx="262" cy="168" r="13" fill="none" stroke="#2dc4ba" stroke-width="1" opacity="0.4"><animate attributeName="r" values="11;20;11" dur="2.5s" begin="1.8s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.4;0;0.4" dur="2.5s" begin="1.8s" repeatCount="indefinite"/></circle>
+          <text x="278" y="160" text-anchor="start" font-family="DM Sans,sans-serif" font-size="12" fill="rgba(255,255,255,0.85)">Nepal</text>
           <!-- Sri Lanka (teal) -->
           <circle cx="240" cy="248" r="7" fill="#2dc4ba"/><circle cx="240" cy="248" r="13" fill="none" stroke="#2dc4ba" stroke-width="1" opacity="0.4"><animate attributeName="r" values="11;20;11" dur="2.4s" begin="0.3s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.4;0;0.4" dur="2.4s" begin="0.3s" repeatCount="indefinite"/></circle>
           <text x="222" y="232" text-anchor="end" font-family="DM Sans,sans-serif" font-size="12" fill="rgba(255,255,255,0.85)">Sri Lanka</text>
@@ -1210,13 +1218,13 @@
     </div>
     <div style="display:flex;align-items:center;justify-content:center;gap:0;flex-wrap:wrap;" class="reveal delay-1">
       <div style="text-align:center;padding:0 20px;">
-        <div style="width:70px;height:70px;border-radius:50%;background:var(--teal);display:flex;align-items:center;justify-content:center;margin:0 auto 16px;box-shadow:0 0 0 8px rgba(26,122,138,0.15);"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div>
-        <div style="font-size:9px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,0.4);margin-bottom:6px;">Student</div><div style="font-size:14px;font-weight:500;color:rgba(255,255,255,0.85);">Home Country</div>
+        <div style="width:70px;height:70px;border-radius:50%;background:var(--teal);display:flex;align-items:center;justify-content:center;margin:0 auto 16px;box-shadow:0 0 0 8px rgba(26,122,138,0.15);"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><path d="M3 21h18M4 21V10l8-5 8 5v11M9 21v-6h6v6"/><path d="M4 10h16"/></svg></div>
+        <div style="font-size:9px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,0.4);margin-bottom:6px;">Source</div><div style="font-size:14px;font-weight:500;color:rgba(255,255,255,0.85);">Australian Institution</div>
       </div>
       <div style="color:var(--gold);font-size:22px;opacity:0.6;padding:0 6px;margin-bottom:24px;">&#8250;</div>
       <div style="text-align:center;padding:0 20px;">
         <div style="width:70px;height:70px;border-radius:50%;background:var(--gold);display:flex;align-items:center;justify-content:center;margin:0 auto 16px;box-shadow:0 0 0 8px rgba(201,168,76,0.12);"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10"/></svg></div>
-        <div style="font-size:9px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,0.4);margin-bottom:6px;">Third Space</div><div style="font-size:14px;font-weight:500;color:rgba(255,255,255,0.85);">Coordination</div>
+        <div style="font-size:9px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,0.4);margin-bottom:6px;">Coordination</div><div style="font-size:14px;font-weight:500;color:rgba(255,255,255,0.85);">Third Space</div>
       </div>
       <div style="color:var(--gold);font-size:22px;opacity:0.6;padding:0 6px;margin-bottom:24px;">&#8250;</div>
       <div style="text-align:center;padding:0 20px;">
@@ -1226,7 +1234,7 @@
       <div style="color:var(--gold);font-size:22px;opacity:0.6;padding:0 6px;margin-bottom:24px;">&#8250;</div>
       <div style="text-align:center;padding:0 20px;">
         <div style="width:70px;height:70px;border-radius:50%;background:#2e7d32;display:flex;align-items:center;justify-content:center;margin:0 auto 16px;box-shadow:0 0 0 8px rgba(46,125,50,0.15);"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
-        <div style="font-size:9px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,0.4);margin-bottom:6px;">Graduate</div><div style="font-size:14px;font-weight:500;color:rgba(255,255,255,0.85);">Australian Degree</div>
+        <div style="font-size:9px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,0.4);margin-bottom:6px;">Student Graduate</div><div style="font-size:14px;font-weight:500;color:rgba(255,255,255,0.85);">Australian Degree</div>
       </div>
     </div>
   </div>
@@ -1379,7 +1387,7 @@
 </div>
 
 <div class="tab-panel" id="panel-courses">
-<section style="background:var(--cream)!important;">
+<section style="background:var(--cream)!important;padding-bottom:32px!important;">
   <div class="container">
     <div class="reveal"><div class="section-label">Additional Services</div><h2 class="section-title">Course <em>Development</em></h2></div>
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start;margin-top:40px;">
@@ -1407,7 +1415,7 @@
     </div>
   </div>
 </section>
-<section id="faculty" style="background:var(--white)!important;">
+<section id="faculty" style="background:var(--white)!important;padding-top:32px!important;">
   <div class="container">
     <div class="reveal"><div class="section-label">Additional Services</div><h2 class="section-title">Faculty Training &amp;<br><em>Development</em></h2></div>
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start;margin-top:40px;">
