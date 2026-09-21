@@ -759,6 +759,70 @@
   .nav-tab.active { color: var(--gold-light); border-bottom-color: var(--gold); font-weight: 600; }
   @media(max-width:900px){ .nav-tabs { display: none; } }
 
+
+  /* ═══ COMPREHENSIVE MOBILE FIXES ═══ */
+  @media(max-width:768px){
+    /* Force ALL inline multi-column grids to single column */
+    [style*="grid-template-columns:1fr 1fr"],
+    [style*="grid-template-columns:repeat(3,1fr)"],
+    [style*="grid-template-columns:repeat(2,1fr)"],
+    [style*="grid-template-columns:1fr 1.4fr"],
+    [style*="grid-template-columns:1fr 1.25fr"],
+    [style*="grid-template-columns:1.3fr 1fr"],
+    [style*="grid-template-columns:1.15fr 1fr"],
+    [style*="grid-template-columns:280px 1fr"],
+    [style*="grid-template-columns:1fr 280px"],
+    [style*="grid-template-columns: 1fr 1fr"],
+    [style*="grid-template-columns: repeat(3,1fr)"] {
+      grid-template-columns: 1fr !important;
+      gap: 20px !important;
+    }
+    /* Reduce large section padding */
+    section { padding: 48px 0 !important; }
+    .container { padding: 0 18px !important; }
+    /* Hero heading smaller */
+    .hero h1 { font-size: clamp(38px, 11vw, 56px) !important; }
+    .section-title { font-size: clamp(30px, 8vw, 44px) !important; }
+    /* Coordination model flow — stack vertically */
+    [style*="display:flex"][style*="justify-content:center"][style*="flex-wrap:wrap"] {
+      flex-direction: column !important;
+      gap: 20px !important;
+    }
+    /* Hide the › arrows between flow nodes on mobile */
+    [style*="margin-bottom:24px"][style*="opacity:0.6"] { display: none !important; }
+    /* How-it-works 4-step flow arrows hidden, stack */
+    [style*="font-size:28px"][style*="opacity:0.4"] { display: none !important; }
+    /* Map SVG — ensure it scales and sits below text */
+    svg[viewBox="0 0 560 520"] { max-width: 340px; margin: 0 auto; }
+    /* Stat blocks stack 2-col max */
+    .story-stat-block { grid-template-columns: 1fr 1fr !important; gap: 20px !important; }
+    /* Reduce oversized inline padding blocks */
+    [style*="padding:40px 44px"] { padding: 28px 24px !important; }
+    [style*="padding:40px"] { padding: 28px !important; }
+    [style*="padding:36px"] { padding: 26px !important; }
+    /* Cost/demand chart panels stack */
+    [style*="grid-template-columns:1fr 1.4fr"] > div,
+    [style*="grid-template-columns:1.3fr 1fr"] > div { width: 100%; }
+    /* Market featured India panel + list already handled by grid collapse */
+    /* Nav tabs already hidden <900px, hamburger shows */
+  }
+  @media(max-width:480px){
+    .hero h1 { font-size: 40px !important; }
+    .section-title { font-size: 32px !important; }
+    section { padding: 40px 0 !important; }
+    /* Stat blocks single column on very small */
+    .story-stat-block { grid-template-columns: 1fr 1fr !important; }
+    /* Reduce hero mission text */
+    .hero-mission { font-size: 14px !important; }
+  }
+
+
+  @media(max-width:768px){
+    svg { max-width: 100%; height: auto; }
+    /* Ensure text in flow diagrams doesn't overflow */
+    [style*="min-width:140px"], [style*="min-width:160px"] { min-width: 100% !important; }
+  }
+
 </style>
 </head>
 <body>
